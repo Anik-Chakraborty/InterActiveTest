@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:it_grow_test/Views/Screens/HomeScreen.dart';
+import 'package:it_grow_test/Views/Screens/DashboardScreen.dart';
 import 'package:it_grow_test/Views/Screens/LogInScreen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
         () {
           if (isLogin) {
             //Navigate to home screen
-            Get.offAll(HomeScreen());
+            Get.offAll(DashboardScreen());
           } else {
             //Navigate to login screen
             Get.offAll(() => LogInScreen());
